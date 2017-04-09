@@ -1,0 +1,102 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*公共部分*/
+.wrapper {
+  min-width: 1000px;
+  width: 100%;
+  height: 100%;
+  /*主体内容*/
+}
+.wrapper .container {
+  margin: 100px auto 0;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.wrapper .container .header {
+  text-align: center;
+  color: #385;
+  font-size: 20px;
+  margin-top: 12px;
+}
+.wrapper .container .content {
+  margin-top: 24px;
+}
+.wrapper .container .content .content-line {
+  width: 789px;
+  margin: 0 auto;
+  height: 1px;
+  background: #69c3ff;
+  line-height: 1px;
+}
+.wrapper .container .content .content-line .content-line-circle {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #69c3ff;
+  position: relative;
+  top: -5px;
+  margin-right: 25px;
+}
+.wrapper .container .content .content-line .content-line-circle:nth-last-child(1) {
+  margin-right: 0;
+}
+.wrapper .container .content .content-plate {
+  width: 789px;
+  margin: 0 auto;
+}
+.wrapper .container .content .content-plate .content-plate-Word {
+  float: left;
+  text-align: center;
+  width: 12px;
+  height: 100%;
+  font-size: 12px;
+  color: #666;
+  margin-right: 25px ;
+}
+.wrapper .container .content .content-plate .content-plate-Word:nth-last-child(1) {
+  margin-right: 0;
+}
+.wrapper .container .content .content-plate .content-plate-Word:hover {
+  color: #ff8e86;
+}

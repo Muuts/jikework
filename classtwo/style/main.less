@@ -1,0 +1,89 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+
+}
+
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*公共部分*/
+@base:#69c3ff;
+@gink:#ccc;
+@white:#fff;
+@change:#ff8e86;
+
+
+
+.wrapper{
+  min-width:1000px;
+  width: 100%;
+  height:100%;
+  /*主体内容*/
+  .container{
+    margin:100px auto 0;
+    width: 1000px;
+    height: 300px;
+    border:1px solid @gink;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius:20px;
+    .header{
+      text-align: center;
+      color: #385;
+      font-size:20px;
+      margin-top: 12px;
+    }
+    .content{
+      margin-top:24px;
+      .content-line{
+        width: 789px;
+        margin:0 auto;
+        height: 1px;
+        background:@base;
+        line-height: 1px;
+        .content-line-circle{
+          float: left;
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          background: @white;
+          border:1px solid @base;
+          position: relative;
+          top:-5px;
+          margin-right: 25px;
+            &:nth-last-child(1){
+              margin-right: 0;
+            }
+        }
+      }
+      .content-plate{
+        width: 789px;
+        margin:0 auto;
+        .content-plate-Word{
+          float: left;
+          text-align: center;
+          width: 12px;
+          height: 100%;
+          font-size: 12px;
+          color: #666;
+          margin-right:25px ;
+          &:nth-last-child(1){
+            margin-right: 0;
+          }
+          &:hover{
+            color: @change;
+          }
+        }
+      }
+    }
+  }
+}
