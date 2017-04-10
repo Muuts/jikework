@@ -1,0 +1,355 @@
+<!DOCTYPE html> <!-- 用了html5的标签就要，就要html5的头 -->
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/><!-- 添加头的图标 -->
+    <link rel="stylesheet" type="text/css" href="new.css"><!-- 添加css文件 -->
+    <!--[if IE]>
+    <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- 这里是PC端的内容 -->
+<div class="pc">
+    <!-- 导航部分 -->
+    <div class="header">
+        <div class="nav">
+            <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+            <a href="http://news.baidu.com/">新闻</a>
+            <a href="http://www.hao123.com/">hao123</a>
+            <a href="http://map.baidu.com/">地图</a>
+            <a href="http://v.baidu.com/?fr=bd">视频</a>
+            <a href="http://tieba.baidu.com/">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+            <div class="setting-menu">
+                <a href="javascript:;" class="baidu-nav">设置</a>
+                <div class="baidu-setting">
+                    <span class="icon-trangle">
+                        <span class="icon-trangle01"></span>
+                    </span>
+                    <a href="javascript:;">搜索设置</a>
+                    <a href="//www.baidu.com.gaoji/advanced.html">高级设置</a>
+                    <a href="javascript:;">关闭预测</a>
+                    <a href="javascript:;">搜索历史</a>
+                </div>
+            </div>
+
+            <a href="javascript:;" class="more" id="navMore">更多产品</a>
+            <!-- javascript:;取消a标签的默认设置 -->
+        </div>
+    </div>
+    <!-- end 导航部分 -->
+    <div class="more-product" id="moreProduct">
+        <ul>
+            <li class="more-sub-btn">
+                <a href="javascript:;">更多产品</a>
+            </li>
+            <li>
+                <a href="http://www.nuomi.com/?cid=002540"><span class="more-sub-one"></span>糯米</a>
+            </li>
+            <li>
+                <a href="http://zhidao.baidu.com/"><span class="more-sub-two"></span>知道</a>
+            </li>
+            <li>
+                <a href="http://music.baidu.com/"><span class="more-sub-three"></span>音乐</a>
+            </li>
+            <li>
+                <a href="http://image.baidu.com/"><span class="more-sub-four"></span>图片</a>
+            </li>
+            <li>
+                <a href="http://wenku.baidu.com/"><span class="more-sub-five"></span>文库</a>
+            </li>
+            <li>
+                <a href="http://top.baidu.com/"><span class="more-sub-six"></span>风雨榜</a>
+            </li>
+            <li>
+                <a href="http://top.baidu.com/"><span class="more-sub-seven"></span>百度推广</a>
+            </li>
+            <li class="more-all">
+                <a href="https://www.baidu.com/more/">全部产品>></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="content">
+        <div class="search-form">
+            <div><img src="img/baidu1.png" alt="百度一下"></div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <!-- action填写的服务器的地址 -->
+                <input type="text" name="wd" class="search-input" autofocus="autofocus">
+                <button type="submit" class="search-btn">百度一下</button>
+                <span class="icon-mic"></span>
+            </form>
+        </div>
+    </div>
+    <!--end 主体部分 -->
+
+    <!-- 底部部分 -->
+    <div class="footer">
+        <div>
+            <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png">
+        </div>
+        <p class="footer-top">
+            <b>手机百度</b>
+        </p>
+        <p>
+            <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+            <a href="http://home.baidu.com/">关于百度</a>
+            <a href="http://ir.baidu.com/">About Baidu</a>
+        </p>
+        <p class="copy-right">
+            <span>©2017 Baidu</span>
+            <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com/">意见反馈 </a>
+            <span> 京ICP证030173号 </span>
+            <span class="icon-copyright"></span>
+        </p>
+    </div>
+    <!--end 底部部分 -->
+</div>
+<!-- 这里是PC端的内容 end-->
+<!-- 这里是移动端的内容 -->
+<div class="mobile">
+    <!--头部区域-->
+    <div class="header">
+        <!--导航内容-->
+        <div class="nav-con">
+            <div class="login-con">
+                <a id="login" class="icon-login"
+                   href="//m.baidu.com/usrprofile?action=home&amp;model=user&amp;ori=index" data-stats="10|2|user|a1_l1"
+                   data-thunder="cst:2;tid:96;logFrom:user;logInfo:avatar;logExtra:{&quot;login&quot;:0};ref:index_iphone;url://m.baidu.com/usrprofile?action=home&amp;model=user&amp;ori=index;">
+                    <span style="background-image:url(https://ss1.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/250c30bcd3d2bbcfc2bf65);"></span>
+                </a>
+            </div>
+        </div>
+        <!--导航logo-->
+        <div class="con-logos">
+            <img src="https://m.baidu.com/static/index/plus/plus_logo.png" alt="百度一下,你就知道">
+        </div>
+        <!--搜索框-->
+        <form class="search-con">
+            <div class="search-wrap">
+                <input type="text" autocomplete="off" autocorrect="off" maxlength="64" id="index-kw" name="word"
+                       class="se-input adjust-input" data-sug="1">
+                <div class="inner-con">
+                    <div class="callicon-icon" style="display: block;">
+                        <div class="baiduapp-icon"></div>
+                    </div>
+                    <button id="index-bn" class="se-bn" type="submit">百度一下</button>
+                </div>
+            </div>
+        </form>
+        <!--导航选项-->
+        <div class="logos-nav">
+            <div class="logos-wraps">
+                <div class="wraps-con">
+                    <div class="swiper-icon">
+                        <a class="ns-item menu-item-0" href="javascript:;" id="" data-stats="10|2|navs|a1_l12"
+                           data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:12,&quot;title&quot;:&quot;\u5173\u6ce8&quot;};ref:index_iphone;"><i
+                                class="ns-focus ns-icon"></i><span class="ns-text">关注</span></a>
+                        <a class="ns-item"
+                           href="http://m.news.baidu.com/news?fr=mohome&amp;ssid=250c30bcd3d2bbcfc2bf65&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1"
+                           data-stats="10|2|navs|a1_l1"
+                           data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:1,&quot;title&quot;:&quot;\u65b0\u95fb&quot;};ref:index_iphone;url:http://m.news.baidu.com/news?fr=mohome&amp;ssid=250c30bcd3d2bbcfc2bf65&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1;"><i
+                                class="ns-news ns-icon"></i><span class="ns-text">新闻</span></a>
+                        <a class="ns-item" href="http://dushu.m.baidu.com" data-stats="10|2|navs|a1_l2"
+                           data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:2,&quot;title&quot;:&quot;\u5c0f\u8bf4&quot;};ref:index_iphone;url:http://dushu.m.baidu.com;"><i
+                                class="ns-novel ns-icon"></i><span class="ns-text">小说</span></a>
+                        <a class="ns-item" href="http://video.m.baidu.com/?from=wise_nav" data-stats="10|2|navs|a1_l3"
+                           data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:3,&quot;title&quot;:&quot;\u89c6\u9891&quot;};ref:index_iphone;url:http://video.m.baidu.com/?from=wise_nav;"><i
+                                class="ns-video ns-icon"></i><span class="ns-text">视频</span></a>
+                        <a class="ns-item" href="https://m.nuomi.com/?cid=wise_shouye_nuomi"
+                           data-stats="10|2|navs|a1_l4"
+                           data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:4,&quot;title&quot;:&quot;\u7cef\u7c73&quot;};ref:index_iphone;url:https://m.nuomi.com/?cid=wise_shouye_nuomi;"><i
+                                class="ns-life ns-icon"></i><span class="ns-text">糯米</span></a>
+                        <a class="ns-item"
+                           href="http://map.baidu.com/mobile/webapp/index/index?itj=45&amp;wtj=wi&amp;ssid=250c30bcd3d2bbcfc2bf65&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1"
+                           data-schema="baidumap://map?src=wise.show.index.nav" data-stats="10|2|navs|a1_l5"
+                           data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:5,&quot;title&quot;:&quot;\u5730\u56fe&quot;};ref:index_iphone;url:http://map.baidu.com/mobile/webapp/index/index?itj=45&amp;wtj=wi&amp;ssid=250c30bcd3d2bbcfc2bf65&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1;"><i
+                                class="ns-map ns-icon"></i><span class="ns-text">地图</span></a>
+                    </div>
+                </div>
+            </div>
+            <ul class="swipe-menu">
+                <li class="ns-swipe-tab ns-swipe-tab-active"></li>
+                <li class="ns-swipe-tab ns-swipe-tab-mr0"></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部区域 end-->
+    <!--正文区域-->
+    <div class="content-brank">
+        <div class="text-news">
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=11403913652736084261&amp;n_type=0&amp;p_from=2"
+                   class="inner-item a-visited">
+                    <div class="text-content">
+                        <h2>这里的垃圾成为了“宝石”, 游客悄悄偷走</h2>
+                    </div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1070799517,2210274736&amp;fm=170&amp;s=DF10D8AADEB3A5F35235392B0300E002&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2326924452,611463367&amp;fm=170&amp;s=DF12F0AB5AF3E5E31A39753203008011&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=195367931,4115501266&amp;fm=170&amp;s=7297D1AEC230C9CC04327554030010B8&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                    </div>
+                    <div class="news-from"><span class="src-net">全网资讯</span><span class="src-time">02-12</span><span
+                            class=""></span></div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=3885986618302375335&amp;n_type=1&amp;p_from=2"
+                   class="inner-item">
+                    <div class="text-content"><h2>一招搞定 Win10 系统电脑关机卡顿现象<span class="hotRec hotRec0"></span></h2></div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4060649124,2422735036&amp;fm=170&amp;s=7450E53BCF3A440B085CE8D90000D0B3&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2602024115,2215314423&amp;fm=170&amp;s=150874331F9A70490ED1D0C60100E0B1&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=929216681,593207175&amp;fm=170&amp;s=9016C63234DBD02D5058D4C90200D0B9&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                    </div>
+                    <div class="news-from">
+                        <span class="src-net">云骑士</span><span class="src-time">16:35</span><span class=""></span>
+                    </div>
+
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=3634945646646256736&amp;n_type=1&amp;p_from=2"
+                   class="inner-item">
+                    <div class="text-content">
+                        <h2>深陷整容风波的她，是外国人心中的“台球公主”！潘晓婷！<span class="hotRec hotRec0"></span></h2></div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3145168070,3102286028&amp;fm=170&amp;s=229219CD27783431504C48320300C042&amp;w=218&amp;h=146&amp;img.PNG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3537124284,1152415307&amp;fm=170&amp;s=AC735D840B7614010C70A48A0300C083&amp;w=218&amp;h=146&amp;img.PNG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1784113769,2336912881&amp;fm=170&amp;s=2D44834E128A9917AB66113303008048&amp;w=218&amp;h=146&amp;img.PNG">
+                        </div>
+                    </div>
+                    <div class="news-from"><span class="src-net">解说体育</span><span class="src-time">12:45</span><span
+                            class=""></span></div>
+                </a></div>
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=16343116973411639179&amp;n_type=0&amp;p_from=2"
+                   class="inner-item">
+                    <div class="text-content"><h2>用“独”旗、呼口号“台独”决心要借大运生事？<span class="hotRec hotRec0"></span></h2></div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3869297497,2045196562&amp;fm=170&amp;s=00BAFAB092B781EB0AA4B41D030050D6&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3883406345,2048252315&amp;fm=170&amp;s=B8366F954F134ADC6019355F0300E0F2&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3897515193,2051308068&amp;fm=170&amp;s=1F145D8148509CCA0498658B0300B080&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                    </div>
+                    <div class="news-from">
+                        <span class="src-net">qq</span><span class="src-time">00:00</span><span class=""></span>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=3824975229186537058&amp;n_type=1&amp;p_from=2"
+                   class="inner-item">
+                    <div class="text-content"><h2>盘点地球上六个神奇的地方<span class="hotRec hotRec0"></span></h2></div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=389058529,532596329&amp;fm=170&amp;s=6F832BC2077E2E36D2E5A403030070D2&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2361211420,2754682591&amp;fm=170&amp;s=57B43CC45C6834071EB3C4530300609B&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=83554350,1559982702&amp;fm=170&amp;s=5E2A36644EAD2D3C9BB95F880300E084&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                    </div>
+                    <div class="news-from"><span class="src-net">乡村新鲜事</span>
+                        <span class="src-time">02-17</span><span class=""></span>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=3885986618302375335&amp;n_type=1&amp;p_from=2"
+                   class="inner-item">
+                    <div class="text-content"><h2>一招搞定 Win10 系统电脑关机卡顿现象<span class="hotRec hotRec0"></span></h2></div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4060649124,2422735036&amp;fm=170&amp;s=7450E53BCF3A440B085CE8D90000D0B3&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2602024115,2215314423&amp;fm=170&amp;s=150874331F9A70490ED1D0C60100E0B1&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=929216681,593207175&amp;fm=170&amp;s=9016C63234DBD02D5058D4C90200D0B9&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                    </div>
+                    <div class="news-from">
+                        <span class="src-net">云骑士</span><span class="src-time">16:35</span><span class=""></span>
+                    </div>
+
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=11403913652736084261&amp;n_type=0&amp;p_from=2"
+                   class="inner-item a-visited">
+                    <div class="text-content">
+                        <h2>这里的垃圾成为了“宝石”, 游客悄悄偷走</h2>
+                    </div>
+                    <div class="pic-content">
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1070799517,2210274736&amp;fm=170&amp;s=DF10D8AADEB3A5F35235392B0300E002&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2326924452,611463367&amp;fm=170&amp;s=DF12F0AB5AF3E5E31A39753203008011&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=195367931,4115501266&amp;fm=170&amp;s=7297D1AEC230C9CC04327554030010B8&amp;w=218&amp;h=146&amp;img.JPEG">
+                        </div>
+                    </div>
+                    <div class="news-from"><span class="src-net">全网资讯</span><span class="src-time">02-12</span><span
+                            class=""></span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--正文区域 end-->
+    <!--底部内容-->
+    <div class="bottom">
+        <ul class="bottom-con">
+            <li class="hotIcon"><a href="http://uil.cbs.baidu.com/urlsafe/redirect?rid=100054">百度浏览器，上网提速200%</a></li>
+            <li class="baiduIcon"><a href="http://downpack.baidu.com/baidusearch_AndroidPhone_1002024w.apk">手机百度，
+                6亿用户的极速搜索应用</a></li>
+            <li class="hotIcon"><a href="http://e.baidu.com/m2/?refer=209">百度推广，让有需求的客户找到你</a></li>
+        </ul>
+        <div class="bottom-footers">
+            <a href="http://ufosdk.baidu.com/?m=Client&amp;a=commonsubmit&amp;appid=517&amp;activityId=1&amp;needEmail=false&amp;bw=35BCE3D2618E1838473C80E0CB099939&amp;kw=&amp;tn=iphone&amp;pageid=6"
+               data-stats="10|2|foot|a1_b2" class="muun-liu">用户反馈</a>
+            <a id="index-copyright" href="https://www.baidu.com/duty/wise/wise_index.html" data-stats="10|2|foot|a2_l1">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+            <a class="recordcode" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank"><i></i>京公网安备11000002000001号</a>
+        </div>
+    </div>
+    <!--底部内容  end-->
+</div>
+<!-- 这里是移动端的内容 end-->
+<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
+

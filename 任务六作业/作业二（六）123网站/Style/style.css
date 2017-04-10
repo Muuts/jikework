@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.wrapper{
+    height: 100%;
+    min-width: 1190px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+
+
+/*头部部分*/
+.header{
+    width: 100%;
+    border-bottom:1px solid  #f2f2f2;
+}
+
+.main-head{
+    position: relative;
+    width: 1190px;
+    margin: 0 auto;
+
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.main-head .images{
+    display: inline-block;
+    margin-right: 50px;
+    float: left;
+    width: 168px;
+    height: 60px;
+}
+
+.main-head .nav{
+    float: left;
+}
+/*天气部分*/
+.main-head .weather{
+    overflow: hidden;
+    float: left;
+}
+
+.main-head .color-style{
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px 0 8px;
+    /*float: left;              不设置会下坠*/
+}
+
+.main-head .color-style .san-tip{
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #8d8d8d;
+    border-left: 1px solid #8d8d8d;
+    display: inline-block;
+    position: relative;
+    margin-left: 4px;
+    transform: rotate(45deg);
+}
+
+.main-head .color-style:hover .san-tip{
+    animation: rotates 1.5s ease normal;
+    transform: rotate(-135deg);
+}
+
+@keyframes rotates {
+    0% {
+        /*margin-bottom: 2px;*/
+        transform: rotate(0deg);
+    }
+    10% {
+      /*margin-bottom: 0px;*/
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    75% {
+        transform: rotate(-90deg);
+
+    }
+    90%{
+        transform: rotate(-120deg);
+    }
+    90%{
+        transform: rotate(-130deg);
+    }
+}
+
+.main-head .weather-icon{
+    background: url("../img/a1.png") no-repeat 0 0;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 60px;
+    /*float: left;*/
+}
+
+.new-style{
+    padding: 0!important;
+}
+
+.main-head .nav .weather .weather-text{
+    display: inline-block;
+    margin-left: 4px;
+    /*float: left;*/
+}
+
+.main-head .nav .weather .weather-infos{
+    /*float: left;*/
+    margin-left: 4px;
+}
+
+.main-head .nav .weather .weather-site-icon{
+    background: url("../img/aio_z.png") -297px -593px no-repeat;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-top: 25px;
+}
+
+/*日期部分*/
+.calendar{
+    overflow: hidden;
+    float: left;
+}
+
+.calendar-week{
+    display: inline-block;
+    margin-left: 4px;
+}
+
+/*星座运势*/
+.star{
+    overflow: hidden;
+    float: left;
+}
+
+/*header-item*/
+.header-item{
+    float: right;
+    overflow: hidden;
+}
+
+.item-size{
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+.item-login{
+    vertical-align: top;
+    height: 60px;
+    display: inline-block;
+    padding: 0 9px 0 10px;
+}
+
+.item-icon{
+    background: url("../img/aio_z.png") -257px -558px no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    margin-right: 4px;
+    position: relative;
+    top:2px;
+}
+
+.item-pan{
+    vertical-align: top;
+    height: 60px;
+    display: inline-block;
+    padding: 0 9px 0 10px;
+}
+
+.item-mail{
+    vertical-align: top;
+    height: 60px;
+    display: inline-block;
+    padding: 0 9px 0 10px;
+}
+
+.item-iphone{
+    vertical-align: top;
+    height: 60px;
+    display: inline-block;
+    padding: 0 9px 0 10px;
+}
+
+.item-joke{
+    vertical-align: top;
+    height: 60px;
+    display: inline-block;
+    padding: 0 9px 0 10px;
+}
+
+.item-skin{
+    vertical-align: top;
+    height: 60px;
+    display: inline-block;
+    padding: 0 9px 0 10px;
+}
+
+
+/*搜索栏*/
+.hao-search{
+    margin: 0 auto;
+    width: 1190px;
+
+}
+
+.main-search{
+    height: 41px;
+    padding: 27px 0 0 166px;
+    position: relative;
+}
+
+.baidu-logo{
+    width: 120px;
+    height: 40px;
+    position: relative;
+    float: left;
+    margin: 4px 30px 0 -26px;
+}
+
+.logo-link{
+    position: absolute;
+    left: 0;
+    z-index: 100;
+
+}
+
+.logo-span{
+    background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/her/static/indexher/container/module/search/searchlogo.dd56f38.png);
+    display: inline-block;
+    width: 120px;
+    height: 39px;
+}
+
+/*wangye a*/
+.tabs-toggle{
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    z-index: 1;
+    padding: 0 10px;
+    width: 38px;
+    height: 44px;
+    font: 400 12px/45px simsun;
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.tab-shan{
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #8d8d8d;
+    border-left: 1px solid #8d8d8d;
+    display: inline-block;
+    position: absolute;
+    top:18px;
+    margin-left: 4px;
+    transform: rotate(-135deg);
+}
+
+/*seacher*/
+
+.form-wrapper{
+    float: left;
+    position: relative;
+}
+.form-hook{
+
+}
+
+.input-shadow{
+    float: left;
+    width: 538px;
+    height: 44px;
+    border: 1px solid #666;
+    border-right: 0;
+    background: #fff;
+}
+
+.input{
+    width: 448px;
+    height: 18px;
+    padding: 10px 0;
+    border: 0;
+    margin: 3px 30px 0 60px;
+    font: 16px arial;
+    font-size: 14px;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.hot-word{
+    background:url(../img/aio_z.png) -406px -416px no-repeat;
+    position: absolute;
+    right: 128px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+
+.hot-num{
+    position: absolute;
+    height: 18px;
+    top: -1px;
+    left: 5px;
+    width: 18px;
+    opacity: 1;
+    cursor: pointer;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+/*button submit*/
+.search-button{
+   float: left;
+}
+
+.button-hook{
+    background: url(../img/aio_z.png) -140px -350px no-repeat;
+    width: 120px;
+    height: 46px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-hook:focus {
+    outline: 0;
+}
+
+/*换肤*/
+.Skin-peeler{
+    float: right;
+    position: relative;
+}
+
+.but-skin{
+    margin-right: 15px;
+    background: antiquewhite;
+    border:0;
+    width: 15px;
+    height: 6px;
+    cursor: pointer;
+}
+
+.btn-color{
+    background: lightskyblue;
+}
+
+.but-skin:focus{
+    outline:0;
+}
+
+.btn-color-r{
+    background: white;
+    margin-right: 80px;
+}
+
+.body-adb{
+    background-color: antiquewhite;
+}
+.body-lightblue{
+    background:url("https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/skin/12.jpg?2");
+}
+.body-white{
+    background-color: #fff;
+}
+
+
+/*hot-search*/
+.hot-search{
+
+    width: 1000px;
+    margin: -9px auto -7px;
+    overflow: hidden;
+}
+
+.hot-search-top{
+    position: relative;
+    z-index: 103;
+    margin: 6px 0 26px 195px;
+    width: 658px;
+    height: 20px;
+}
+.hot-list{
+    display: flex;
+    align-content:space-between;
+}
+.hot-list li{
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.hot-list li a{
+    color: #666;
+}
+
+/*page-menus*/
+.page-with{
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.menus-wrap{
+    position: relative;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+/*menus*/
+.menus{
+    margin: 0 auto;
+    height: 38px;
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background: #fcfcfc;
+}
+
+.menus .menu{
+    position: relative;
+    float: left;
+    width: 110px;
+}
+
+.menus .first{
+    width: 81px;
+}
+
+.first .links{
+    background-color: #0aa770;
+    color: #fff;
+    position: relative;
+    display: block;
+    height: 38px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.menus .link {
+    position: relative;
+    display: block;
+    height: 38px;
+    text-align: center;
+    font: 400 16px/38px "Microsoft Yahei";
+    color: #333;
+}
+
+/*page-width*/
+
+.page-width{
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.govsite-top{
+    position: relative;
+    margin: -11px auto 10px;
+    padding: 8px 0;
+    border: solid 1px #ade0c1;
+    line-height: 20px;
+    font-size: 14px;
+    background: #fff;
+}
+
+/*page-width*/
+.govsite-top .title {
+    display: inline-block;
+    border-right: 1px solid #eaeaea;
+    width: 80px;
+    text-align: center;
+    color: #118850;
+    margin-right: 36px;
+}
+
+.govsite-top .govsite-link {
+    color: #333;
+    margin-right: 32px;
+    font-size: 14px;
+}
+
+/*layout-left*/
+.layout-left{
+    float: left;
+    width: 280px;
+    padding: 9px 0 0 18px;
+    border: 1px solid #cecece;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+}
+
+.starbar-list{
+    width: 126px;
+    position: relative;
+    line-height: 26px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.star-icon{
+    background: url("../img/aio_z.png") -106px -555px no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+}
+
+.split {
+    padding: 0 5px;
+    color: #999;
+    position: relative;
+    top: -1px;
+}
+
+/*layout-right*/
+.layout-right{
+    position: relative;
+    width: 900px;
+    float: right;
+    border:1px solid #adb;
+    background: #fcfcfc;
+}
+
+.site-bd{
+    padding:3px 0 0 23px;
+    position: relative;
+}
+
+.site-item{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 129px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 4px;
+    padding:6px 0 4px 9px;
+    font-size: 14px;
+    color: #000;
+}
+
+.widget-site{
+    background: url("../img/defaultIcon1229.png") 2px -198px no-repeat;
+    padding-left:25px ;
+}
+
+.sublink{
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.tie-site{
+    background: url("../img/defaultIcon1229.png") 2px -278px no-repeat;
+}
+
+.sou-site{
+    background: url("../img/defaultIcon1229.png") 2px -318px no-repeat;
+}
+
+.teng-site{
+    background: url("../img/defaultIcon1229.png") 2px -38px no-repeat;
+}
+
+.wang-site{
+    background: url("../img/defaultIcon1229.png") 2px -157px no-repeat;
+}
+
+.you-site{
+    background: url("../img/defaultIcon1229.png") 2px -398px no-repeat;
+}
+
+.tan-site{
+    background: url("../img/10138.2.png") 2px 0 no-repeat;
+}
+
+.feng-site{
+    background: url("../img/defaultIcon1229.png") 2px -238px no-repeat;
+}
+
+.tao-site{
+    background: url("../img/defaultIcon1229.png") 2px -358px no-repeat;
+}
+
+.nvwang-site{
+    background: url("../img/10138.2.png") 2px 0 no-repeat;
+}
+
+.game-site{
+    background: url("../img/defaultIcon1229.png") 2px 2px no-repeat;
+}
+
+.yingshi-site{
+    background: url("../img/1419388771.png") 2px 0 no-repeat;
+}
+
+.jingdong-site{
+    background: url("../img/jingdong.png") 2px 0 no-repeat;
+}
+
+.shuning-site{
+    background: url("../img/shuniong.png") 2px 0 no-repeat;
+}
+
+.tejia-site{
+    background: url("../img/tejia.png") 2px 0 no-repeat;
+}
+
+.tiyu-site{
+    background: url("../img/lanqiu.png") 2px 0 no-repeat;
+}
+
+.qiche-site{
+    background: url("../img/defaultIcon1229.png") 2px -518px no-repeat;
+}
+
+.jvhua-site{
+    background: url("../img/jvhua.png") 2px 0 no-repeat;
+}
+
+
+
+
+

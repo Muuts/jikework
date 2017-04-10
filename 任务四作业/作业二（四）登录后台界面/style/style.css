@@ -1,0 +1,216 @@
+/*初始化*/
+body{
+    height: 100%;
+    background: #a69e9b !important;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    min-width: 1000px;
+    height: 100%;
+
+}
+
+/*共同区域*/
+ul{
+    list-style: none;
+    vertical-align: middle;
+}
+
+a{
+    color:#333 !important;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#555;
+    text-decoration: none !important;
+}
+
+a:hover, a:focus {
+    color: #005580;
+    text-decoration: none !important;
+}
+
+/*头部区域*/
+.header{
+    position: relative;
+    height: 100%;
+    width: 1000px;
+    margin:0 auto;
+}
+
+.container{
+    width: 1000px!important;
+    margin:0 auto;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.container .logo-head a{
+    float:left;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    font-size:28px;
+    color:#555;
+    margin-right: 50px;
+}
+
+.container .part-chance{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.container .part-chance ul li{
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.container .part-chance ul li a:hover{
+    text-decoration: underline;
+}
+
+.container .nav ul{
+    position: relative;
+    bottom: -25px;
+}
+
+.container .nav ul li{
+    float: left;
+    margin-right: 18px;
+    box-sizing: border-box;
+}
+
+.container .nav ul li a{
+    padding: 8px 4px 8px 4px;
+
+}
+
+.container .nav ul li a:hover{
+    text-decoration: none;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+/*正文区域*/
+.content{
+    position: relative;
+    height: 100%;
+}
+
+
+.content .container{
+    width: 1000px;
+    margin:0 auto;
+    height: 100%;
+
+}
+
+.content .container .span3{
+    margin-top: 40px;
+    height: 100%;
+    text-align: center;
+
+}
+
+.content .container .span3 ul{
+
+    border-radius:10px;
+}
+
+.content .container .span3 ul li .box{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 25px;
+    border: 1px solid #2d6987;
+    margin-bottom:5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius:5px;
+    background-color: #f8b9b7;
+}
+
+.content .container .span3 ul li:hover .box i{
+    animation: rotates 1s ease normal;
+    transform: rotate(-180deg);
+}
+
+@keyframes rotates {
+    0% {
+        margin-bottom: 2px;
+        transform: rotate(-45deg);
+
+    }
+    10% {
+        margin-bottom: -2px;
+    }
+    100% {
+        transform: rotate(-135deg);
+
+    }
+}
+
+.content .container .span3 ul li i{
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    display: inline-block;
+    transform: rotate(135deg);
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+
+.content .container .span3 ul li a{
+    line-height: 25px;
+
+}
+
+.content .container .span3 ul li a{
+
+}
+
+.container .span9{
+    margin-top: 40px;
+    height: 100%;
+    border-radius:4px;
+    position: relative;
+}
+
+.span9 .con-top h5{
+    margin-top:0;
+    margin-bottom: 7px;
+    color: #555;
+}
+
+
+.span9 .con-middle p .btn{
+    margin-right: 20px;
+    padding: 0 6px;
+    font-size: 10px;
+}
+
+.span9 table td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0!important;
+}
+
+.content .container{
+    border-bottom:0;
+}
+
+

@@ -1,0 +1,248 @@
+/*初始化，可以很好的解决适配问题*/
+*{
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+
+html body{
+	height: 100%;
+}
+
+.wrapper{
+	min-height: 500px;
+	min-width: 810px;
+	height: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+/*导航部分*/
+nav{
+	display:-webkit-flex;
+}
+
+header nav a{
+	color:#333;
+	font-size:13px;
+	margin-left: 20px;
+	display:inline-block;
+	justify-content:flex-start;
+	align-self: start;
+	text-decoration: none;
+}
+
+header nav{
+	position: absolute;
+	right: 0;
+	top:0;
+	margin:19px 0 5px;
+	padding:0 19px 0 0;
+}
+
+nav a.chose{
+	text-decoration: underline;
+}
+
+
+nav a.chose:hover{
+	color:#00c;
+}
+
+.lif{
+	font-weight:bold;
+}
+
+.sepup{
+	/*
+	top:-5px;*/
+	text-decoration: none;
+	/*font-weight:normal;*/
+}
+
+#menu{
+	position:absolute;
+	display:none;
+	color:#000;
+	top:22px;
+	left: 346px;
+	padding: 4px;
+	border: 1px solid #c8c8c8;
+}
+
+#menu li{
+	margin-top:3px;
+}
+
+.sepup:hover #menu{
+	display:block;
+}
+
+.septo{
+	color:#fff;
+	background:#38f;
+	text-align:center;
+	border:4px solid #38f;
+	margin-top:-5px;
+}
+
+.listto{
+	margin-top:-4px;
+}
+
+#list{
+	display:none;
+	text-align:center;
+}
+
+#list li{
+	margin-top:4px;
+}
+
+#list a:hover{
+	text-decoration:underline;
+}
+
+#list .ois_box{
+	width: 41px;
+	height: 36px;
+	display: block;
+	margin-top: 15px;
+}
+
+#list .osi_a{
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) -72px 0;
+	margin-left: 30px;
+}
+#list .osi_b{
+	width: 35px;
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) 144px 0;
+	margin-left: 33px;
+}
+#list .osi_c{
+	width: 36px;
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) -36px 0;
+	margin-left: 31px;
+}
+#list .osi_d{
+	width: 36px;
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) 112px 0;
+	margin-left: 30px;
+}
+#list .osi_f{
+	width: 36px;
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) 75px 0;
+	margin-left: 30px;
+}
+
+
+
+
+.listfo:hover #list{
+	display:block;
+	z-index:1;
+}
+
+
+/*主体部分*/
+.content{
+	position:relative;
+	top:120px;
+	text-align:center;
+	z-index:-1;
+}
+
+
+.tim img{
+	 width: 270px;
+    	height: 129px;
+    	z-index:-10;
+}
+
+.content input {
+    width: 540px;
+    height: 34px;
+}
+
+.content button {
+    width: 100px;
+    height: 38px;
+    color:#fff;
+    font-size:15px;
+    background:#3385ff;
+    border:1px solid #2d78f4;
+    float:left;
+}
+
+.fim{
+	vertical-align:top;
+	display:inline-block;   /*清除浮动 不写这个，因为内联无法设置高宽，且子元素浮动，也无法撑大，无法居中定位   */ 
+	margin-top:25px;
+	overflow:hidden;        /*  清除浮动*/
+}
+
+.fim input{
+	background:#fff;
+	overflow:hidden;
+	float:left;
+}
+
+.to_image img{
+	position:relative;
+	top:-31px;
+	left: 196px;
+}
+
+
+
+/*底部部分*/
+
+footer{
+	text-align:center;
+}
+
+.bom{
+	position:absolute;
+	/*height: 10px;*/
+	width: 100%;
+	bottom:-70px;
+}
+
+.dom p{
+	text-align:center;
+}
+
+.dom{
+	position:absolute;
+	width: 100%;
+	bottom:-130px;
+}
+
+footer p,footer a{
+	color:#999;
+	font-size:13px;
+}
+
+footer .bom p{
+	margin-left:-2px;
+	margin-top:3px;
+}
+
+footer .dom p{
+	margin-left:15px;
+	margin-top:7px;
+}
+
+footer .vis{
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	background: url("https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png") -600px -96px ;
+}
+
+footer .vas{
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	background: url("https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png") -623px -96px;
+}

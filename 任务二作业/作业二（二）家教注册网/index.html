@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>青岛家教网注册页面</title>
+    <link rel="stylesheet" type="text/css" href="css/open.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="logo">
+            <a href="http://www.qdjj.net/"> <img src="http://www.qdjj.net/images/qdjjlogo.gif"></a>
+        </div>
+        <div class="nav">
+            <a href="http://www.qdjj.net/member/register.asp">注册</a>
+            <a href="http://www.qdjj.net/login.asp">登录</a>
+            <a href="javascript:window.external.addFavorite('http://www.qdjj.net','%E9%9D%92%E5%B2%9B%E5%AE%B6%E6%95%99%E7%BD%91')">收藏本站</a>
+        </div>
+    </div>
+    <div class="main">
+        <form action="#">
+            <table border="1">
+                <caption>新教员注册第二步</caption>
+                <thead>
+                <tr>
+                    <td colspan="2">
+                        您的注册资料越详细就越有利于家长和学员检索，也就越容易获得家长的预约，所以请您务必如实详细地填写。 其中红
+                        <p class="tabletop">色星号（<span class="sign">*</span>）为必填。我们已对您的个人信息做保密处理，您的信息是安全的。</p>
+                        <p class="tabletop">您选择的是<span class="sign">大学生</span>身份,若有误请<a
+                                href="javascript:history.go(-1);">返回</a>更改</p>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- 基本资料 -->
+                <tr>
+                    <th colspan="2" align="left" class="head_line">&nbsp;基本资料</th>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="name">真实姓名：</label>
+                    </td>
+                    <td width="500px">
+                        <input type="text" name="姓名" id="name" placeholder="张三" required>
+                        <span class="blue_line"><span class="sign">注意：</span>姓名应与身份证完全一致，本网站将对你的姓名严格保密，只显示您的姓，如“张教员”。此部分将在认证时严格审查，一经填写不得修改，与证件不符者将不能通过认证！</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="id"> 身份证/护照：</label>
+                    </td>
+                    <td>
+                        <input type="text" name="身份证/护照" placeholder="ID card" required id="id"><span class="blue_line">(此项将严格保密，不对外公开)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="select">性别：</label>
+                    </td>
+                    <td>
+                        <select name="sex" id="select">
+                            <option value="open">请选择</option>
+                            <option value="nan">男</option>
+                            <option value="nv">女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="birthday">出生年份：</label>
+                    </td>
+                    <td>
+                        <select name="birthday" id="birthday">
+                            <option value="">选择年</option>
+                            <option value="1945">1945</option>
+                            <option value="1946">1946</option>
+                            <option value="1947">1947</option>
+                            <option value="1948">1948</option>
+                            <option value="1949">1949</option>
+                            <option value="1950">1950</option>
+                            <option value="1951">1951</option>
+                            <option value="1952">1952</option>
+                            <option value="1953">1953</option>
+                            <option value="1954">1954</option>
+                            <option value="1955">1955</option>
+                            <option value="1956">1956</option>
+                            <option value="1957">1957</option>
+                            <option value="1958">1958</option>
+                            <option value="1959">1959</option>
+                            <option value="1960">1960</option>
+                            <option value="1961">1961</option>
+                            <option value="1962">1962</option>
+                            <option value="1963">1963</option>
+                            <option value="1964">1964</option>
+                            <option value="1965">1965</option>
+                            <option value="1966">1966</option>
+                            <option value="1967">1967</option>
+                            <option value="1968">1968</option>
+                            <option value="1969">1969</option>
+                            <option value="1970">1970</option>
+                            <option value="1971">1971</option>
+                            <option value="1972">1972</option>
+                            <option value="1973">1973</option>
+                            <option value="1974">1974</option>
+                            <option value="1975">1975</option>
+                            <option value="1976">1976</option>
+                            <option value="1977">1977</option>
+                            <option value="1978">1978</option>
+                            <option value="1979">1979</option>
+                            <option value="1980">1980</option>
+                            <option value="1981">1981</option>
+                            <option value="1982">1982</option>
+                            <option value="1983">1983</option>
+                            <option value="1984">1984</option>
+                            <option value="1985">1985</option>
+                            <option value="1986">1986</option>
+                            <option value="1987">1987</option>
+                            <option value="1988">1988</option>
+                            <option value="1989">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="major">专业：</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="major" required id="major"><span class="blue_line">请如实填写专业全名，以学生证为准。此部分将在认证时严格审查，与证件不符者将不能通过认证！</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="knowledge">目前（最高）学历：</label>
+                    </td>
+                    <td>
+                        <select name="knowledge" id="knowledge">
+                            <option value="selected">—请选择—</option>
+                            <option value="大专以下">大专以下</option>
+                            <option value="大专">大专</option>
+                            <option value="本科">本科</option>
+                            <option value="硕士">硕士</option>
+                            <option value="博士">博士</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="degree">目前身份：</label>
+                    </td>
+                    <td>
+                        <select name="degree" id="degree">
+                            <option value="" selected>—请选择—</option>
+                            <option value="大专在读">大专在读</option>
+                            <option value="本科大一">本科大一</option>
+                            <option value="本科大二">本科大二</option>
+                            <option value="本科大三">本科大三</option>
+                            <option value="本科大四">本科大四</option>
+                            <option value="本科大五">本科大五</option>
+                            <option value="在读硕士生">在读硕士生</option>
+                            <option value="硕士进修老师">硕士进修老师</option>
+                            <option value="在读博士生">在读博士生</option>
+                            <option value="其他学生">其他学生</option>
+                        </select>
+                        <span class="blue_line">请及时更新自己的身份，暑假期间注册，请选择下一学期的身份</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="nation">籍贯（生源地）：</label>
+                    </td>
+                    <td>
+                        <select name="nation" id="nation">
+                            <option value="" selected>—请选择—</option>
+                            <option value=青岛市南>青岛市南</option>
+                            <option value=青岛市北>青岛市北</option>
+                            <option value=青岛四方>青岛四方</option>
+                            <option value=青岛李沧>青岛李沧</option>
+                            <option value=青岛崂山>青岛崂山</option>
+                            <option value=青岛城阳>青岛城阳</option>
+                            <option value=青岛黄岛>青岛黄岛</option>
+                            <option value=青岛即墨>青岛即墨</option>
+                            <option value=青岛胶州>青岛胶州</option>
+                            <option value=青岛胶南>青岛胶南</option>
+                            <option value=青岛平度>青岛平度</option>
+                            <option value=青岛莱西>青岛莱西</option>
+                            <option value="">--------</option>
+                            <option value=山东>山东</option>
+                            <option value=北京>北京</option>
+                            <option value=天津>天津</option>
+                            <option value=上海>上海</option>
+                            <option value=重庆>重庆</option>
+                            <option value=安徽>安徽</option>
+                            <option value=江苏>江苏</option>
+                            <option value=浙江>浙江</option>
+                            <option value=福建>福建</option>
+                            <option value=甘肃>甘肃</option>
+                            <option value=广东>广东</option>
+                            <option value=广西>广西</option>
+                            <option value=贵州>贵州</option>
+                            <option value=海南>海南</option>
+                            <option value=河北>河北</option>
+                            <option value=河南>河南</option>
+                            <option value=黑龙江>黑龙江</option>
+                            <option value=湖北>湖北</option>
+                            <option value=湖南>湖南</option>
+                            <option value=吉林>吉林</option>
+                            <option value=江西>江西</option>
+                            <option value=辽宁>辽宁</option>
+                            <option value=内蒙>内蒙</option>
+                            <option value=宁厦>宁厦</option>
+                            <option value=青海>青海</option>
+                            <option value=山西>山西</option>
+                            <option value=陕西>陕西</option>
+                            <option value=四川>四川</option>
+                            <option value=西藏>西藏</option>
+                            <option value=香港>香港</option>
+                            <option value=新疆>新疆</option>
+                            <option value=云南>云南</option>
+                        </select>
+                        <span class="blue_line">（并非指当前所在地）</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="school2">毕业/就读高校：</label>
+                    </td>
+                    <td>
+                        <select name="school" id="school2">
+                            <option value="" selected>—请选择—</option>
+                            <option value="海大鱼山校区">海大鱼山校区</option>
+                            <option value="海大崂山校区">海大崂山校区</option>
+                            <option value="海大浮山校区">海大浮山校区</option>
+                            <option value="青大浮山校区">青大浮山校区</option>
+                            <option value="青大东部校区">青大东部校区</option>
+                            <option value="青大四方校区">青大四方校区</option>
+                            <option value="青大登州路校区">青大登州路校区</option>
+                            <option value="青岛大学师范学院">青岛大学师范学院</option>
+                            <option value="青理工四方校区">青理工四方校区</option>
+                            <option value="青理工黄岛校区">青理工黄岛校区</option>
+                            <option value="青科大四方校区">青科大四方校区</option>
+                            <option value="青科大崂山校区">青科大崂山校区</option>
+                            <option value="中国石油大学">中国石油大学</option>
+                            <option value="青岛农业大学">青岛农业大学</option>
+                            <option value="山东科技大学">山东科技大学</option>
+                            <option value="求实学院">求实学院</option>
+                            <option value="恒星学院">恒星学院</option>
+                            <option value="远洋船员学院">远洋船员学院</option>
+                            <option value="青岛飞洋学院">青岛飞洋学院</option>
+                            <option value="其它">其它</option>
+                        </select>
+                        <span class="blue_line"><label for="in_text">若列表中无选项，请在文本框中填写</label></span>
+                        <input type="text" id="in_text" style="width: 144px" placeholder="school" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="school">高中母校：</label>
+                    </td>
+                    <td>
+                        <select name="school" id="school">
+                            <option value="selected">—请选择—</option>
+                            <option value="海大鱼山校区">海大鱼山校区</option>
+                            <option value="海大崂山校区">海大崂山校区</option>
+                            <option value="海大浮山校区">海大浮山校区</option>
+                            <option value="青大浮山校区">青大浮山校区</option>
+                            <option value="青大东部校区">青大东部校区</option>
+                            <option value="青大四方校区">青大四方校区</option>
+                            <option value="青大登州路校区">青大登州路校区</option>
+                            <option value="青岛大学师范学院">青岛大学师范学院</option>
+                            <option value="青理工四方校区">青理工四方校区</option>
+                            <option value="青理工黄岛校区">青理工黄岛校区</option>
+                            <option value="青科大四方校区">青科大四方校区</option>
+                            <option value="青科大崂山校区">青科大崂山校区</option>
+                            <option value="中国石油大学">中国石油大学</option>
+                            <option value="青岛农业大学">青岛农业大学</option>
+                            <option value="山东科技大学">山东科技大学</option>
+                            <option value="求实学院">求实学院</option>
+                            <option value="恒星学院">恒星学院</option>
+                            <option value="远洋船员学院">远洋船员学院</option>
+                            <option value="青岛飞洋学院">青岛飞洋学院</option>
+                            <option value="其它">其它</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- 	联系方式 -->
+                <tr>
+                    <th colspan="2" align="left" class="head_line">&nbsp;联系方式</th>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="phone">手机/小灵通：</label>
+                    </td>
+                    <td>
+                        <input type="number" id="phone" placeholder="number" required>
+                        <span class="blue_line">最好留下多个联系方式，换号时请及时更新联系方式</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="address1">目前住所：</label>
+                    </td>
+                    <td>
+                        <select name="address1" id="address1">
+                            <option value="" selected="">—请选择—</option>
+                            <option value="非青岛地区">非青岛地区</option>
+                            <option value="市南---团岛">市南---团岛</option>
+                            <option value="市南---火车站（栈桥）">市南---火车站（栈桥）</option>
+                            <option value="市南---中山路">市南---中山路</option>
+                            <option value="市南---海大鱼山校区（大学路）">市南---海大鱼山校区（大学路）</option>
+                            <option value="市南---汇泉广场">市南---汇泉广场</option>
+                            <option value="市南---八大关">市南---八大关</option>
+                            <option value="市南---市政府">市南---市政府</option>
+                            <option value="市南---书城">市南---书城</option>
+                            <option value="市南---广电大厦（大福源）">市南---广电大厦（大福源）</option>
+                            <option value="市南---澳柯玛立交桥（百安居）">市南---澳柯玛立交桥（百安居）</option>
+                            <option value="市南---青岛大学（麦岛）">市南---青岛大学（麦岛）</option>
+                            <option value="市南---东部市立医院">市南---东部市立医院</option>
+                            <option value="市南---湛山">市南---湛山</option>
+                            <option value="市北---小港">市北---小港</option>
+                            <option value="市北---市立医院（西部）">市北---市立医院（西部）</option>
+                            <option value="市北---电子信息城">市北---电子信息城</option>
+                            <option value="市北---台东">市北---台东</option>
+                            <option value="市北---内蒙古路长途汽车站">市北---内蒙古路长途汽车站</option>
+                            <option value="市北---错埠岭小区">市北---错埠岭小区</option>
+                            <option value="市北---浮山后">市北---浮山后</option>
+                            <option value="市北---山东路家乐福">市北---山东路家乐福</option>
+                            <option value="市北---敦化路">市北---敦化路</option>
+                            <option value="市北---青岛图书馆">市北---青岛图书馆</option>
+                            <option value="四方---四方利群">四方---四方利群</option>
+                            <option value="四方---青岛理工大学（抚顺路）">四方---青岛理工大学（抚顺路）</option>
+                            <option value="四方---兴隆路">四方---兴隆路</option>
+                            <option value="四方---杭州路">四方---杭州路</option>
+                            <option value="四方---瑞昌路">四方---瑞昌路</option>
+                            <option value="四方---宜昌路">四方---宜昌路</option>
+                            <option value="四方---孤山村">四方---孤山村</option>
+                            <option value="四方---东方家园（公交四公司）">四方---东方家园（公交四公司）</option>
+                            <option value="四方---水清沟（市肿瘤医院）">四方---水清沟（市肿瘤医院）</option>
+                            <option value="四方---青岛科技大学（胜利桥）">四方---青岛科技大学（胜利桥）</option>
+                            <option value="四方---海琴广场">四方---海琴广场</option>
+                            <option value="四方---北岭">四方---北岭</option>
+                            <option value="四方---杨家群">四方---杨家群</option>
+                            <option value="李沧---太原路">李沧---太原路</option>
+                            <option value="李沧---沧口">李沧---沧口</option>
+                            <option value="李沧---振华路立交桥">李沧---振华路立交桥</option>
+                            <option value="李沧---李沧区政府">李沧---李沧区政府</option>
+                            <option value="李沧---李沧广场">李沧---李沧广场</option>
+                            <option value="李沧---李村公园">李沧---李村公园</option>
+                            <option value="李沧---九水路立交桥">李沧---九水路立交桥</option>
+                            <option value="李沧---侯家庄">李沧---侯家庄</option>
+                            <option value="李沧---永安路">李沧---永安路</option>
+                            <option value="李沧---百通花园">李沧---百通花园</option>
+                            <option value="李沧---百通馨园">李沧---百通馨园</option>
+                            <option value="崂山---颐中体育场">崂山---颐中体育场</option>
+                            <option value="崂山---辽阳路立交桥">崂山---辽阳路立交桥</option>
+                            <option value="崂山---青岛国际啤酒城">崂山---青岛国际啤酒城</option>
+                            <option value="崂山---青岛科技大学东部校区">崂山---青岛科技大学东部校区</option>
+                            <option value="崂山---石老人">崂山---石老人</option>
+                            <option value="崂山---青岛市博物馆">崂山---青岛市博物馆</option>
+                            <option value="崂山---海大崂山校区">崂山---海大崂山校区</option>
+                            <option value="崂山---中韩">崂山---中韩</option>
+                            <option value="崂山---沙子口">崂山---沙子口</option>
+                            <option value="崂山---北村">崂山---北村</option>
+                            <option value="城阳">城阳</option>
+                            <option value="黄岛">黄岛</option>
+                            <option value="即墨">即墨</option>
+                            <option value="胶州">胶州</option>
+                            <option value="胶南">胶南</option>
+                            <option value="平度">平度</option>
+                            <option value="莱西">莱西</option>
+                        </select>
+                        <span class="blue_line">选择离您的住所最近的地点</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="address2">家庭或校外住所：</label>
+                    </td>
+                    <td>
+                        <select name="address2" id="address2">
+                            <option value="" selected>—请选择—</option>
+                            <option value="非青岛地区">非青岛地区</option>
+
+                            <option value="市南---团岛">市南---团岛</option>
+
+                            <option value="市南---火车站（栈桥）">市南---火车站（栈桥）</option>
+
+                            <option value="市南---中山路">市南---中山路</option>
+
+                            <option value="市南---海大鱼山校区（大学路）">市南---海大鱼山校区（大学路）</option>
+
+                            <option value="市南---汇泉广场">市南---汇泉广场</option>
+
+                            <option value="市南---八大关">市南---八大关</option>
+
+                            <option value="市南---市政府">市南---市政府</option>
+
+                            <option value="市南---书城">市南---书城</option>
+
+                            <option value="市南---广电大厦（大福源）">市南---广电大厦（大福源）</option>
+
+                            <option value="市南---澳柯玛立交桥（百安居）">市南---澳柯玛立交桥（百安居）</option>
+
+                            <option value="市南---青岛大学（麦岛）">市南---青岛大学（麦岛）</option>
+
+                            <option value="市南---东部市立医院">市南---东部市立医院</option>
+
+                            <option value="市南---湛山">市南---湛山</option>
+
+                            <option value="市北---小港">市北---小港</option>
+
+                            <option value="市北---市立医院（西部）">市北---市立医院（西部）</option>
+
+                            <option value="市北---电子信息城">市北---电子信息城</option>
+
+                            <option value="市北---台东">市北---台东</option>
+
+                            <option value="市北---内蒙古路长途汽车站">市北---内蒙古路长途汽车站</option>
+
+                            <option value="市北---错埠岭小区">市北---错埠岭小区</option>
+
+                            <option value="市北---浮山后">市北---浮山后</option>
+
+                            <option value="市北---山东路家乐福">市北---山东路家乐福</option>
+
+                            <option value="市北---敦化路">市北---敦化路</option>
+
+                            <option value="市北---青岛图书馆">市北---青岛图书馆</option>
+
+                            <option value="四方---四方利群">四方---四方利群</option>
+
+                            <option value="四方---青岛理工大学（抚顺路）">四方---青岛理工大学（抚顺路）</option>
+
+                            <option value="四方---兴隆路">四方---兴隆路</option>
+
+                            <option value="四方---杭州路">四方---杭州路</option>
+
+                            <option value="四方---瑞昌路">四方---瑞昌路</option>
+
+                            <option value="四方---宜昌路">四方---宜昌路</option>
+
+                            <option value="四方---孤山村">四方---孤山村</option>
+
+                            <option value="四方---东方家园（公交四公司）">四方---东方家园（公交四公司）</option>
+
+                            <option value="四方---水清沟（市肿瘤医院）">四方---水清沟（市肿瘤医院）</option>
+
+                            <option value="四方---青岛科技大学（胜利桥）">四方---青岛科技大学（胜利桥）</option>
+
+                            <option value="四方---海琴广场">四方---海琴广场</option>
+
+                            <option value="四方---北岭">四方---北岭</option>
+
+                            <option value="四方---杨家群">四方---杨家群</option>
+
+                            <option value="李沧---太原路">李沧---太原路</option>
+
+                            <option value="李沧---沧口">李沧---沧口</option>
+
+                            <option value="李沧---振华路立交桥">李沧---振华路立交桥</option>
+
+                            <option value="李沧---李沧区政府">李沧---李沧区政府</option>
+
+                            <option value="李沧---李沧广场">李沧---李沧广场</option>
+
+                            <option value="李沧---李村公园">李沧---李村公园</option>
+
+                            <option value="李沧---九水路立交桥">李沧---九水路立交桥</option>
+
+                            <option value="李沧---侯家庄">李沧---侯家庄</option>
+
+                            <option value="李沧---永安路">李沧---永安路</option>
+
+                            <option value="李沧---百通花园">李沧---百通花园</option>
+
+                            <option value="李沧---百通馨园">李沧---百通馨园</option>
+
+                            <option value="崂山---颐中体育场">崂山---颐中体育场</option>
+
+                            <option value="崂山---辽阳路立交桥">崂山---辽阳路立交桥</option>
+
+                            <option value="崂山---青岛国际啤酒城">崂山---青岛国际啤酒城</option>
+
+                            <option value="崂山---青岛科技大学东部校区">崂山---青岛科技大学东部校区</option>
+
+                            <option value="崂山---石老人">崂山---石老人</option>
+
+                            <option value="崂山---青岛市博物馆">崂山---青岛市博物馆</option>
+
+                            <option value="崂山---海大崂山校区">崂山---海大崂山校区</option>
+
+                            <option value="崂山---中韩">崂山---中韩</option>
+
+                            <option value="崂山---沙子口">崂山---沙子口</option>
+
+                            <option value="崂山---北村">崂山---北村</option>
+
+                            <option value="城阳">城阳</option>
+
+                            <option value="黄岛">黄岛</option>
+
+                            <option value="即墨">即墨</option>
+
+                            <option value="胶州">胶州</option>
+
+                            <option value="胶南">胶南</option>
+
+                            <option value="平度">平度</option>
+
+                            <option value="莱西">莱西</option>
+                        </select>
+                        <span class="blue_line">请家在青岛市区或住在校外的教员填写</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="email">Email：</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" placeholder="email" required><span class="blue_line">(为通知合适您的家教及找回密码，请认真填写)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="number">QQ</label>
+                    </td>
+                    <td>
+                        <input type="number" id="number" placeholder="number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="addresss3">详细地址：</label>
+                    </td>
+                    <td>
+                        <input type="text" id="addresss3" placeholder="address" required><span class="blue_line">(以方便我们给您寄送家教相关资料及协议等。)</span>
+                    </td>
+                </tr>
+                <!-- 	 家 教 信 息 -->
+                <tr>
+                    <th colspan="2" align="left" class="head_line">&nbsp;家教信息</th>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="putong_hua">普通话：</label>
+                    </td>
+                    <td>
+                        <select name="putong_hua" id="putong_hua">
+                            <option value="标准">标准</option>
+                            <option value="一般" selected="">一般</option>
+                            <option value="较差">较差</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="language">第一外语：</label>
+                    </td>
+                    <td>
+                        <select name="language" id="language">
+                            <option value="英语" selected>英语</option>
+                            <option value="日语">日语</option>
+                            <option value="韩语">韩语</option>
+                            <option value="法语">法语</option>
+                            <option value="德语">德语</option>
+                            <option value="西班牙语">西班牙语</option>
+                            <option value="葡萄牙语">葡萄牙语</option>
+                            <option value="阿拉伯语">阿拉伯语</option>
+                            <option value="俄语">俄语</option>
+                            <option value="其他">其他</option>
+                        </select>
+                        <select name="languagelevel" id="language_level">
+                            <option value="一级">一级</option>
+                            <option value="二级">二级</option>
+                            <option value="三级">三级</option>
+                            <option value="四级">四级</option>
+                            <option value="六级">六级</option>
+                            <option value="专四">专四</option>
+                            <option value="专八">专八</option>
+                            <option value="精通">精通</option>
+                            <option value="熟练">熟练</option>
+                            <option value="一般" selected>一般</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="language2">第二外语：</label>
+                    </td>
+                    <td>
+                        <select name="language2" id="language2">
+                            <option value="无" selected>无</option>
+                            <option value="英语">英语</option>
+                            <option value="日语">日语</option>
+                            <option value="韩语">韩语</option>
+                            <option value="法语">法语</option>
+                            <option value="德语">德语</option>
+                            <option value="西班牙语">西班牙语</option>
+                            <option value="葡萄牙语">葡萄牙语</option>
+                            <option value="阿拉伯语">阿拉伯语</option>
+                            <option value="俄语">俄语</option>
+                            <option value="其他">其他</option>
+                        </select>
+                        <select name="language2level" id="language2_level">
+                            <option value="一级">一级</option>
+                            <option value="二级">二级</option>
+                            <option value="三级">三级</option>
+                            <option value="四级">四级</option>
+                            <option value="六级">六级</option>
+                            <option value="专四">专四</option>
+                            <option value="专八">专八</option>
+                            <option value="精通">精通</option>
+                            <option value="熟练">熟练</option>
+                            <option value="一般" selected>一般</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="good">自我描述与特长展示：</label>
+                    </td>
+                    <td>
+                        <textarea name="good" id="good" cols="60" rows="6"></textarea><br>
+                        <span class="blue_line">全面展示你的实力和优势特长，增加你简历的含金量！例如：在比赛中得过什么重要奖项，获得过什么奖学金，取得什么样的高考成绩，有哪些能证明你能力的资格证书之类。 不得少于50字，不得超过500字。家长选择你的重要依据，请认真填写！</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <div><label for="good2">家教经历</label></div>
+                        （教学成果）：
+                    </td>
+                    <td>
+                        <textarea name="good2" id="good2" cols="60" rows="6"></textarea><br>
+                        <span class="blue_line">这些内容是对您教学水平最有力和最直接的反映！是学员选择您的一项重要依据。字数500字以内。最好说明辅导时间、学生年级、辅导效果。可参考以下形式：2008年10月-12月，市南区初三学生英语，期终考试从全班第30名上升至第10名，英语从60分提升到80分。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <div><span class="sign">*</span>可辅导的科目</div>
+                        （不超过10项）：
+                    </td>
+                    <td>
+                        <p class="sign">教员在选择中考、高考、雅思、新概念等有难度的科目时应量力而行，最好有实际辅导经验。</p>
+                        <p class="type"><span class="strong">-----</span><strong>小学-----</strong></p>
+                        <input name="job" type="checkbox" value="小学语文" id="1"><label for="1">小学语文</label>
+                        <input name="job" type="checkbox" value="小学数学" id="2"><label for="2">小学数学</label>
+                        <input name="job" type="checkbox" value="小学英语" id="3"><label for="3">小学英语</label>
+                        <input name="job" type="checkbox" value="小学奥数" id="4"><label for="4">小学奥数</label>
+                        <input name="job" type="checkbox" value="小学全科" id="5"><label for="5">小学全科</label>
+                        <p class="type"><span class="strong">-----</span><strong>初中-----</strong></p>
+                        <input name="job" type="checkbox" value="初中语文" id="6"><label for="6">初中语文</label>
+                        <input name="job" type="checkbox" value="初中英语" id="7"><label for="7">初中英语</label>
+                        <input name="job" type="checkbox" value="初中数学" id="8"><label for="8">初中数学</label>
+                        <input name="job" type="checkbox" value="初中物理" id="9"><label for="9">初中物理</label>
+                        <input name="job" type="checkbox" value="初中化学" id="10"><label for="10">初中化学</label>
+                        <input name="job" type="checkbox" value="初中地理" id="11"><label for="11">初中地理</label>
+                        <input name="job" type="checkbox" value="初中生物" id="12"><label for="12">初中生物</label>
+                        <input name="job" type="checkbox" value="初中数理化" id="13"><label for="13">初中数理化</label>
+                        <input name="job" type="checkbox" value="初中全科" id="14"><label for="14">初中全科</label>
+                        <input name="job" type="checkbox" value="初中奥数" id="15"><label for="15">初中奥数</label>
+                        <input name="job" type="checkbox" value="中考语文" id="16"><label for="16">中考语文</label>
+                        <input name="job" type="checkbox" value="中考英语" id="17"><label for="17">中考英语</label>
+                        <input name="job" type="checkbox" value="中考数学" id="18"><label for="18">中考数学</label>
+                        <input name="job" type="checkbox" value="中考物理" id="19"><label for="19">中考物理</label>
+                        <input name="job" type="checkbox" value="中考化学" id="20"><label for="20">中考化学</label>
+                        <input name="job" type="checkbox" value="中考数理化" id="21"><label for="21">中考数理化</label>
+                        <input name="job" type="checkbox" value="中考全科" id="22"><label for="22">中考全科</label>
+                        <input name="job" type="checkbox" value="中考心理辅导" id="23"><label for="23">中考心理辅导</label>
+                        <p class="type"><span class="strong">-----</span><strong>高中-----</strong></p>
+                        <input name="job" type="checkbox" value="高一高二语文" id="24"><label for="24">高一高二语文</label>
+                        <input name="job" type="checkbox" value="高一高二英语" id="25"><label for="25">高一高二英语</label>
+                        <input name="job" type="checkbox" value="高一高二数学" id="26"><label for="26">高一高二数学</label>
+                        <input name="job" type="checkbox" value="高一高二物理" id="27"><label for="27">高一高二物理</label>
+                        <input name="job" type="checkbox" value="高一高二化学" id="28"><label for="28">高一高二化学</label>
+                        <input name="job" type="checkbox" value="高一高二地理" id="29"><label for="29">高一高二地理</label>
+                        <input name="job" type="checkbox" value="高一高二生物" id="30"><label for="30">高一高二生物</label>
+                        <input name="job" type="checkbox" value="高考语文" id="31"><label for="31">高考语文</label>
+                        <input name="job" type="checkbox" value="高考英语" id="32"><label for="32">高考英语</label>
+                        <input name="job" type="checkbox" value="高考数学" id="33"><label for="33">高考数学</label>
+                        <input name="job" type="checkbox" value="高考物理" id="34"><label for="34">高考物理</label>
+                        <input name="job" type="checkbox" value="高考化学" id="35"><label for="35">高考化学</label>
+                        <input name="job" type="checkbox" value="高考数理化" id="36"><label for="36">高考数理化</label>
+                        <input name="job" type="checkbox" value="高考美术" id="37"><label for="37">高考美术</label>
+                        <input name="job" type="checkbox" value="高考理综" id="38"><label for="38">高考理综</label>
+                        <input name="job" type="checkbox" value="高考文综" id="39"><label for="39">高考文综</label>
+                        <input name="job" type="checkbox" value="高考心理辅导" id="40"><label for="40">高考心理辅导</label>
+                        <p class="type"><span class="strong">-----</span><strong>大学-----</strong></p>
+                        <input name="job" type="checkbox" value="高等数学" id="41"><label for="41">高等数学</label>
+                        <input name="job" type="checkbox" value="考研数学" id="42"><label for="42">考研数学</label>
+                        <p class="type"><span class="strong">-----</span><strong>英语-----</strong></p>
+                        <input name="job" type="checkbox" value="英语口语" id="43"><label for="43">英语口语</label>
+                        <input name="job" type="checkbox" value="新概念英语" id="44"><label for="44">新概念英语</label>
+                        <input name="job" type="checkbox" value="牛津英语" id="45"><label for="45">牛津英语</label>
+                        <input name="job" type="checkbox" value="英语四级" id="46"><label for="46">英语四级</label>
+                        <input name="job" type="checkbox" value="英语六级" id="47"><label for="47">英语六级</label>
+                        <input name="job" type="checkbox" value="GRE" id="48"><label for="48">GRE</label>
+                        <input name="job" type="checkbox" value="托福" id="49"><label for="49">托福</label>
+                        <input name="job" type="checkbox" value="雅思" id="50"><label for="50">雅思</label>
+                        <input name="job" type="checkbox" value="初级商务英语" id="51"><label for="51">初级商务英语</label>
+                        <input name="job" type="checkbox" value="高级商务英语" id="52"><label for="52">高级商务英语</label>
+                        <input name="job" type="checkbox" value="剑桥英语"id="53"><label for="53">剑桥英语</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>方便授课区域：
+                    </td>
+                    <td>
+                        -----<b>市南---</b>
+                        <input name="area" type="checkbox" value="市南全区" id="54"><span style="color: red;"><label for="54">市南全区</label></span><br>
+                        <input name="area" type="checkbox" id="area1" value="市南-团岛"><label for="area1">团岛</label>
+                        <input name="area" type="checkbox" id="area2" value="市南-火车站（栈桥）"><label for="area2">火车站（栈桥）</label>
+                        <input name="area" type="checkbox" id="area3" value="市南-中山路"><label for="area3">中山路</label>
+                        <input name="area" type="checkbox" id="area4" value="市南-海大鱼山校区（大学路）"><label for="area4">海大鱼山校区（大学路）</label>
+                        <input name="area" type="checkbox" id="area5" value="市南-汇泉广场"><label for="area5">汇泉广场</label>
+                        <input name="area" type="checkbox" id="area6" value="市南-八大关"><label for="area6">八大关</label>
+                        <input name="area" type="checkbox" id="area7" value="市南-市政府"><label for="area7">市政府</label>
+                        <input name="area" type="checkbox" id="area8" value="市南-书城"><label for="area8">书城</label>
+                        <input name="area" type="checkbox" id="area9" value="市南-广电大厦（大福源）"><label for="area9">广电大厦（大福源）</label>
+                        <input name="area" type="checkbox" id="area10" value="市南-澳柯玛立交桥（百安居）"><label for="area10">澳柯玛立交桥（百安居）</label>
+                        <input name="area" type="checkbox" id="area11" value="市南-青岛大学（麦岛）"><label for="area11">青岛大学（麦岛）</label>
+                        <input name="area" type="checkbox" id="area12" value="市南-东部市立医院"><label for="area12">东部市立医院</label>
+                        <input name="area" type="checkbox" id="area13" value="市南-湛山"><label for="area13">湛山</label>
+                        <br><br>
+                        -----<b>市北---</b>
+                        <input name="area" type="checkbox" id="area20" value="市北全区"><span style="color: red"><label for="area20">市北全区</label></span><br>
+                        <input name="area" type="checkbox" id="area14" value="市北-小港"><label for="area14"></label>小港
+                        <input name="area" type="checkbox" id="area15" value="市北-市立医院（西部）"><label for="area15">市立医院（西部）</label>
+                        <input name="area" type="checkbox" id="area16" value="市北-电子信息城"><label for="area16">电子信息城</label>
+                        <input name="area" type="checkbox" id="area17" value="市北-台东"><label for="area17">台东</label>
+                        <input name="area" type="checkbox" id="area18" value="市北-内蒙古路长途汽车站"><label for="area18">内蒙古路长途汽车站</label>
+                        <input name="area" type="checkbox" id="area19" value="市北-错埠岭小区"><label for="area19">错埠岭小区</label>
+                        <input name="area" type="checkbox" id="area21" value="市北-浮山后"><label for="area21">浮山后</label>
+                        <input name="area" type="checkbox" id="area22" value="市北-山东路家乐福"><label for="area22">山东路家乐福</label>
+                        <input name="area" type="checkbox" id="area23" value="市北-敦化路"><label for="area23">敦化路</label>
+                        <input name="area" type="checkbox" id="area24" value="市北-青岛图书馆"><label for="area24">青岛图书馆</label>
+                        <br><br>
+
+                        -----<b>四方---</b>
+                        <input name="area" type="checkbox"  id="area90" value="四方全区"><span style="color: red"><label for="area90">四方全区</label></span><br>
+                        <input name="area" type="checkbox" id="area25" value="四方-四方利群"><label for="area25"></label>四方利群
+                        <input name="area" type="checkbox" id="area26" value="四方-青岛理工大学（抚顺路）"><label for="area26"></label>青岛理工大学（抚顺路）
+                        <input name="area" type="checkbox" id="area27" value="四方-兴隆路"><label for="area27">兴隆路</label>
+                        <input name="area" type="checkbox" id="area28" value="四方-杭州路"><label for="area28">杭州路</label>
+                        <input name="area" type="checkbox" id="area29" value="四方-瑞昌路"><label for="area29">瑞昌路</label>
+                        <input name="area" type="checkbox" id="area30" value="四方-宜昌路"><label for="area30">宜昌路</label>
+                        <input name="area" type="checkbox" id="area31" value="四方-孤山村"><label for="area31">孤山村</label>
+                        <input name="area" type="checkbox" id="area32" value="四方-东方家园（公交四公司）"><label for="area32">东方家园（公交四公司）</label>
+                        <input name="area" type="checkbox" id="area33" value="四方-水清沟（市肿瘤医院）"><label for="area33">水清沟（市肿瘤医院）</label>
+                        <input name="area" type="checkbox" id="area34" value="四方-青岛科技大学（胜利桥）"><label for="area34">青岛科技大学（胜利桥）</label>
+                        <input name="area" type="checkbox" id="area35" value="四方-海琴广场"><label for="area35">海琴广场</label>
+                        <input name="area" type="checkbox" id="area36" value="四方-北岭"><label for="area36">北岭</label>
+                        <input name="area" type="checkbox" id="area37" value="四方-杨家群"><label for="area37">杨家群</label>
+                        <br><br>
+                        -----<b>城阳---</b>
+                        <input name="area" type="checkbox" id="area58" value="城阳"><label for="area58">城阳</label>
+                        <br>
+                        -----<b>黄岛---</b>
+                        <input name="area" type="checkbox" id="area59" value="黄岛"><label for="area59">黄岛</label>
+                        <br>
+                        -----<b>即墨---</b>
+
+                        <input name="area" type="checkbox" id="area60" value="即墨"><label for="area60">即墨</label>
+                        <br>
+
+                        -----<b>胶州---</b>
+
+                        <input name="area" type="checkbox" id="area61" value="胶州"><label for="area61">胶州</label>
+                        <br>
+
+                        -----<b>胶南---</b>
+
+                        <input name="area" type="checkbox" id="area62" value="胶南"><label for="area62">胶南</label>
+                        <br>
+
+                        -----<b>平度---</b>
+
+                        <input name="area" type="checkbox" id="area63" value="平度"><label for="area63">平度</label>
+                        <br>
+
+                        -----<b>莱西---</b>
+
+                        <input name="area" type="checkbox" id="area64" value="莱西"><label for="area64">莱西</label>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>
+                        <label for="time">可授课时间：</label>
+                    </td>
+                    <td>
+                        <input type="text" required size="30" maxlength="30" id="time" placeholder="授课无时间限制">
+                        <span class="blue_line">(请注意及时更新授课时间)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>辅导方式：
+                    </td>
+                    <td>
+                        <input name="teach_mode" type="checkbox" id="teach_mode1" value="教员上门">
+                        <label for="teach_mode1">教员上门</label>
+                        <input name="teach_mode" type="checkbox" id="teach_mode2" value="学员上门">
+                        <label for="teach_mode2">学员上门</label>
+                        <input name="teach_mode" type="checkbox" id="teach_mode3" value="网上辅导">
+                        <label for="teach_mode3">网上辅导</label>
+                        <input name="teach_mode" type="checkbox" id="teach_mode4" value="可协商">
+                        <label for="teach_mode4">可协商</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span class="sign">*</span>薪酬要求：
+                    </td>
+                    <td>
+                        <textarea name="pay" cols="60" rows="5" id="pay" placeholder="执行青岛家教网薪水标准" required></textarea><br>
+                        <span class="blue_line">默认为接受青岛家教网的课时费标准（查看详细的报酬标准《变成链接》)，如果不同意，也可以在表中列出自己的薪酬要求，如：小学**元/时、小学奥数**元/时、初一**元/时、高三**元/时、钢琴**元/时、陪读**元/月。
+                </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" height="85px" class="other_th">
+                        <input type="submit" name="submit" id="submit" value="提交" style="width: 85px">
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <p>
+            Copyright © 2003～2008 版权所有 青岛家教网
+        </p>
+    </div>
+</div>
+</body>
+
+</html>

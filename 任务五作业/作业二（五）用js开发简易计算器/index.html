@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js简易计算器</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="Calculator">
+
+        <table border="1">
+            <tbody>
+            <tr>
+                <td colspan="4">（每次计算完，需按AC复位）<span id="num" style="display:inline-block;width: 346px;height: 46px;font-size: 16px;color:rebeccapurple;"></span></td>
+            </tr>
+            <tr>
+                <td><button value="7" onclick="refute7()" >7</button></td>
+                <td><button value="8" onclick="refute8()" >8</button></td>
+                <td><button value="9" onclick="refute9()" >9</button></td>
+                <td><button value="/" onclick="refute11()" >/</button></td>
+            </tr>
+
+            <tr>
+                <td><button value="4" onclick="refute4()" >4</button></td>
+                <td><button value="5" onclick="refute5()" >5</button></td>
+                <td><button value="6" onclick="refute6()" >6</button></td>
+                <td><button value="*" onclick="refute13()" >*</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="refute1()" >1</button></td>
+                <td><button value="2" onclick="refute2()" >2</button></td>
+                <td><button value="3" onclick="refute3()" >3</button></td>
+                <td><button value="-" onclick="refute14()" >-</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button value="0" onclick="refute0()" >0</button></td>
+                <td><button value="." onclick="refute15()" >.</button></td>
+                <td><button value="+" onclick="refute12()" >+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button value="AC" onclick="refuteAC()" >AC</button></td>
+                <td colspan="2"><button value="=" onclick="calus()" >=</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>

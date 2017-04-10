@@ -1,0 +1,134 @@
+.outer{
+	width: 300px;
+	height: 300px;
+	margin:120px auto 0 auto;
+}
+
+.box .one , .box .two , .box  .three , .box  .four, .box  .five ,  .box .six{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	// border:3px solid #000;
+	background: rgba(f,f,f,0.8);
+	text-align: center;
+	font-size: 130px;
+}
+
+.box{
+	-webkit-animation-name:animation;				/*动画名字*/
+	-webkit-animation-timing-function:ease-in-out;			/*动画运动*/
+	-webkit-animation-iteration-count:infinite;			/*循环运动*/
+	-webkit-animation-duration:4s;					/*动画间隔时间*/
+	-webkit-transform-style:preserve-3d;				/*指定成3d渲染*/
+	-webkit-transform-origin:150px 150px 0px;				/*制定旋转的位置*/
+	 animation: animation 4s ease-in-out infinite;			/* 要兼容W3C的标准，做好各种浏览器的兼容 */
+	 -moz-animation: animation 4s ease-in-out infinite;			/* 要兼容火狐的标准，做好各种浏览器的兼容 */
+
+	// -webkit-perspective:350px; 				/*视点距离，即观察距离*/
+	// -webkit-perspective-origin:25% -40px;      /*观察立方体的角度，第一个值为水平侧视，第二个值（需要px）为上下视图*/
+
+}
+
+.box .one{
+	-webkit-transform:translateZ(150px);		/*往z轴推80px*/
+	transform:translateZ(150px);			/* 做兼容 */
+	-moz-transform:translateZ(150px);			/* 做兼容 */
+}
+.box .two{
+	-webkit-transform:rotateX(-90deg) translateZ(150px);		/*需要先旋转rotate，再推translate，不然不会下去*/
+	transform:rotateX(-90deg) translateZ(150px);
+	-moz-transform:rotateX(-90deg) translateZ(150px);
+}
+.box .three{
+	-webkit-transform:rotateX(90deg) translateZ(150px);
+	transform:rotateX(90deg) translateZ(150px);
+	-moz-transform:rotateX(90deg) translateZ(150px);
+}
+.box .four{
+	/*-webkit-transform:translateZ(-80px);	 */        				/*也可以这样*/
+	-webkit-transform:rotateX(180deg) rotateZ(-90deg) translateZ(150px);
+	transform:rotateX(180deg) rotateZ(-90deg) translateZ(150px);
+	-moz-transform:rotateX(180deg) rotateZ(-90deg) translateZ(150px);
+}
+.box .five{
+	-webkit-transform:rotateY(-90deg) rotateZ(-90deg) translateZ(150px);
+	transform:rotateY(-90deg) rotateZ(-90deg) translateZ(150px);
+	-moz-transform:rotateY(-90deg) rotateZ(-90deg) translateZ(150px);
+}
+.box .six{
+	-webkit-transform:rotateY(90deg) translateZ(150px);
+	transform:rotateY(90deg) translateZ(150px);
+	-moz-transform:rotateY(90deg) translateZ(150px);
+}
+
+.one div{
+	height: 100px;
+	width: 100px;
+	background-color: #f44336;
+	border-radius: 10px;
+	float: left;
+}
+.two div{
+	height: 100px;
+	width: 100px;
+	background-color: #ffeb3b;
+	border-radius: 10px;
+	float: left;
+}
+
+.three div{
+	height: 100px;
+	width: 100px;
+	background-color: #03a9f4;
+	border-radius: 10px;
+	float: left;
+}
+.four div{
+	height: 100px;
+	width: 100px;
+	background-color: #00ffff;
+	border-radius: 10px;
+	float: left;
+}
+
+.five div{
+	height: 100px;
+	width: 100px;
+	background-color:#00ff01;
+	border-radius: 10px;
+	float: left;
+}
+
+.six div{
+	height: 100px;
+	width: 100px;
+	background-color:#007c4b;
+	border-radius: 10px;
+	float: left;
+}
+
+@-webkit-keyframes animation{
+	from,to{}
+	16%{-webkit-transform:rotateY(-90deg);}
+	33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-webkit-transform:rotateY(225deg) rotateZ(135deg);}
+	66%{-webkit-transform:rotateY(135deg) rotateZ(135deg);}
+	83%{-webkit-transform:rotateX(135deg);}
+}
+
+@keyframes animation{
+	from,to{}
+	16%{transform:rotateY(-90deg);}
+	33%{transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{transform:rotateY(225deg) rotateZ(135deg);}
+	66%{transform:rotateY(135deg) rotateZ(135deg);}
+	83%{transform:rotateX(135deg);}
+}
+@-moz-keyframes animation{
+	from,to{}
+	16%{-moz-transform:rotateY(-90deg);}
+	33%{-moz-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-moz-transform:rotateY(225deg) rotateZ(135deg);}
+	66%{-moz-transform:rotateY(135deg) rotateZ(135deg);}
+	83%{-moz-transform:rotateX(135deg);}
+}

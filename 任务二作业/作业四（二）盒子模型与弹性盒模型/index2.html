@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒模型</title>
+    <style type="text/css">
+    .col {
+        -webkit-column-count: 3;
+        /*float: left;*/
+    }
+    
+    .col img {
+        float: left;
+    }
+    
+    .header {
+        width: 300px;
+        height: 300px;
+        display: -webkit-box;
+        /*设置盒子模型*/
+        -webkit-box-pack: center;
+        /*水平居中*/
+        -webkit-box-align: center;
+        /*垂直居中*/
+        background-color: orange;
+    }
+    
+    .con {
+        width: 400px;
+        display: -webkit-flex;
+        /*新弹性盒子模型*/
+        /*display: -webkit-box; */
+        /*旧版弹性盒子*/
+        /*-webkit-box-orient:vertical; */
+        /*旧版的从上至下布局*/
+        -webkit-flex-direction: column;
+        /*新版的从上至下布局*/
+    }
+    
+    .don {
+        float: left;
+        width: 400px;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+    }
+    
+    .first {
+        height: 100px;
+        background-color: orange;
+        /*-webkit-flex:1; */
+        /*新版盒子使用方法*/
+        /* 注意语句之间的不同*/
+        -webkit-box-flex: 1;
+        /*旧版弹性盒子使用新的方法*/
+        -webkit-order:3;
+        /*开发中，一般大公司两者都会用，新版，旧版都写上*/
+    }
+    
+    .second {
+        height: 100px;
+        background-color: green;
+        -webkit-box-flex: 1;
+        -webkit-order:1;
+        /*排列顺序设置，一定要加上-webkit-*/
+    }
+    
+    .three {
+        height: 100px;
+        background-color: red;
+        -webkit-box-flex: 1;
+        -webkit-order:2;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>cloumn</h2>
+    <div class="col">
+        <img src="http://www.sinaimg.cn/dy/slidenews/1_img/2017_03/2841_771923_643191.jpg" width="150px"> 经我校学术规范委员会调查认定，社会发展与公共政策学院2013届毕业生仇思隽博士学位论文抄袭事实确凿。校学位评定委员会1月21日召开会议，依据教育部《学位论文作假行为处理办法》和《复旦大学学位论文作假行为处理办法》，决定撤销仇思隽的博士学位，停止其导师梁鸿的招收研究生资格。学校将进一步深入调查，以作出后续处理。经我校学术规范委员会调查认定，社会发展与公共政策学院2013届毕业生仇思隽博士学位论文抄袭事实确凿。校学位评定委员会1月21日召开会议，依据教育部《学位论文作假行为处理办法》和《复旦大学学位论文作假行为处理办法》，决定撤销仇思隽的博士学位，停止其导师梁鸿的招收研究生资格。学校将进一步深入调查，以作出后续处理。经我校学术规范委员会调查认定，社会发展与公共政策学院2013届毕业生仇思隽博士学位论文抄袭事实确凿。校学位评定委员会1月21日召开会议，依据教育部《学位论文作假行为处理办法》和《复旦大学学位论文作假行为处理办法》，决定撤销仇思隽的博士学位，停止其导师梁鸿的招收研究生资格。学校将进一步深入调查，以作出后续处理。
+    </div>
+    <hr>
+    <h2>旧版盒子的居中</h2>
+    <div class="header">
+        <img src="http://www.sinaimg.cn/dy/slidenews/1_img/2017_03/2841_771923_643191.jpg" width="150px">
+    </div>
+    <hr>
+    <h2>弹性盒子水平分栏，垂直分栏，排序(flex)</h2>
+    <div class="con">
+    <p>垂直分栏</p>
+   
+        <div class="first">第一个</div>
+        <div class="second">第二个</div>
+        <div class="three">第三个</div>
+    </div>
+    <p> 水平分栏</p>
+
+   
+    <div class="don">
+
+        <div class="first">第一个</div>
+        <div class="second">第二个</div>
+        <div class="three">第三个</div>
+    </div>
+</body>
+
+</html>

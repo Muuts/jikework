@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正常盒子与怪异盒子的对比</title>
+	<style type="text/css">
+		*{					/*表示全部标签*/
+			margin: 0;
+			padding:0;
+		}
+		.xiezi{
+			widows: 100px;
+			height: 100px;
+			background-color:orange;
+			overflow: auto;
+
+		}
+		.xiehe{
+			box-shadow:1px 1px 10px 3px rgba(39,139,47,.6);
+			/*<length>①：第1个长度值用来设置对象的阴影水平偏移值。可以为负值
+			<length>②：第2个长度值用来设置对象的阴影垂直偏移值。可以为负值
+			<length>③：如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值
+			<length>④：如果提供了第4个长度值则用来设置对象的阴影外延值。不允许负值
+			<color>：设置对象的阴影的颜色。请参阅颜色值*/
+			/*a： 透明度。取值0~1之间*/
+			margin-left: 100px;
+			margin-top:100px;
+			margin-bottom:100px;
+			background-color:red;
+			width: 100px;
+			height: 100;
+			padding: 10px;
+			border:5px solid green;
+		}
+		.xiehe1{
+			float: left;
+			box-shadow:5px 5px rgba(0,0,0,.6);
+			margin-top:100px;
+			margin-left:100px;
+			padding:10px;
+			border:5px solid green;
+			width: 130px;
+			height:130px;
+			box-sizing: border-box;/*设置怪异盒模型*/
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+<h1>
+	盒模型都是用在块集元素上的
+</h1>
+	<div class="xiehe">
+		 <div class="xiezi">
+			标准的盒模
+		</div>
+	</div>
+	<hr>
+	<div class="xiehe1">
+		 <div class="xiezi">
+			怪异的盒模型
+		</div>
+	</div>
+	
+</body>
+</html>

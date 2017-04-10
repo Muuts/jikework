@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- 用了html5的标签就要，就要html5的头 -->
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/><!-- 添加头的图标 -->
+    <link rel="stylesheet" type="text/css" href="new.css"><!-- 添加css文件 -->
+    <!--[if IE]>
+    <script src="./js/html5shiv.js" ></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 导航部分 -->
+    <div class="header">
+        <div class="nav">
+            <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+            <a href="http://news.baidu.com/">新闻</a>
+            <a href="http://www.hao123.com/">hao123</a>
+            <a href="http://map.baidu.com/">地图</a>
+            <a href="http://v.baidu.com/?fr=bd">视频</a>
+            <a href="http://tieba.baidu.com/">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+            <div class="setting-menu">
+                <a href="javascript:;" class="baidu-nav">设置</a>
+                <div class="baidu-setting">
+                    <span class="icon-trangle">
+                        <span class="icon-trangle01"><span>
+                    </span>
+                    <a href="javascript:;">搜索设置</a>
+                    <a href="//www.baidu.com.gaoji/advanced.html">高级设置</a>
+                    <a href="javascript:;">关闭预测</a>
+                    <a href="javascript:;">搜索历史</a>
+                </div>
+            </div>
+
+            <a href="javascript:;" class="more" id="navMore">更多产品</a>
+            <!-- javascript:;取消a标签的默认设置 -->
+        </div>
+    </div>
+    <!-- end 导航部分 -->
+    <div class="more-product" id="moreProduct">
+            <ul>
+                <li class="more-sub-btn">
+                    <a href="javascript:;">更多产品</a>
+                </li>
+                <li>
+                    <a href="http://www.nuomi.com/?cid=002540"><span class="more-sub-one"></span>糯米</a>
+                </li>
+                <li>
+                    <a href="http://zhidao.baidu.com/"><span class="more-sub-two"></span>知道</a>
+                </li>
+                <li>
+                    <a href="http://music.baidu.com/"><span class="more-sub-three"></span>音乐</a>
+                </li>
+                <li>
+                    <a href="http://image.baidu.com/"><span class="more-sub-four"></span>图片</a>
+                </li>
+                <li>
+                    <a href="http://wenku.baidu.com/"><span class="more-sub-five"></span>文库</a>
+                </li>
+                <li>
+                    <a href="http://top.baidu.com/"><span class="more-sub-six"></span>风雨榜</a>
+                </li>
+                <li>
+                    <a href="http://top.baidu.com/"><span class="more-sub-seven"></span>百度推广</a>
+                </li>
+                <li class="more-all">
+                    <a href="https://www.baidu.com/more/">全部产品>></a>
+                </li>
+            </ul>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="content">
+        <div class="search-form">
+            <div><img src="img/baidu1.png" alt="百度一下"></div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <!-- action填写的服务器的地址 -->
+                <input type="text" name="wd" class="search-input" autofocus="autofocus">
+                <button type="submit" class="search-btn">百度一下</button>
+                <span class="icon-mic"></span>
+            </form>
+        </div>
+    </div>
+    <!--end 主体部分 -->
+
+    <!-- 底部部分 -->
+    <div class="footer">
+        <div>
+            <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png">
+        </div>
+        <p class="footer-top">
+            <b>手机百度</b>
+        </p>
+        <p>
+            <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+            <a href="http://home.baidu.com/">关于百度</a>
+            <a href="http://ir.baidu.com/">About Baidu</a>
+        </p>
+        <p class="copy-right">
+            <span>©2017 Baidu</span>
+            <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com/">意见反馈 </a>
+            <span> 京ICP证030173号 </span>
+            <span class="icon-copyright"></span>
+        </p>
+    </div>
+    <!--end 底部部分 -->
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
+

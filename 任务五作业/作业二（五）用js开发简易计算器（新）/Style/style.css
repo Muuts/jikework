@@ -1,0 +1,13 @@
+.wrapper{
+    width: 1000px;
+    margin:200px auto 0;
+}
+
+.header{
+    color: rebeccapurple;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.content{
+    margin-top: 15px;
+}

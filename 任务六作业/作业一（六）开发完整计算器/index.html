@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开发完整计算器</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--计算器-->
+    <div class="main">
+        <!--制作计算器表格-->
+            <table>
+                <tbody>
+                <tr>
+                    <td colspan="5" ><input type="text" readonly value="" id="resultIpt" style="display:inline-block;width: 400px;height: 60px;font-size: 40px;color: rebeccapurple; text-align: right;overflow: hidden"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="onclick tip-kong" onclick="calculator.remove()">退格</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-kong" onclick="calculator.clearAll();">全清</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-kong" onclick="calculator.clearAll()">清屏</button>
+                    </td>
+
+                    <td colspan="2" style="width: 60px">
+                        <button class="onclick tip-number"  onclick="calculator.clearAll()">高级计算器AC</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="onclick tip-number" onclick="calculator.input(this,7)">sin</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-number" onclick="calculator.input(this,8)">cos</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-number" onclick="calculator.input(this,9)">tan</button>
+                    </td>
+                    <td>
+                       <button class="onclick tip-number" onclick="calculator.input(this,-3);">+/-</button>
+                    </td>
+                    <td>
+                       <button class="onclick tip-number"  onclick="calculator.input(this,4)">√</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="onclick clicknumber" value="7" onclick="calculator.input(this,-1);">7</button>
+                    </td>
+                    <td>
+                        <button class="onclick clicknumber" value="8" onclick="calculator.input(this,-1);">8</button>
+                    </td>
+                    <td>
+                        <button class="onclick clicknumber" value="9" onclick="calculator.input(this,-1);">9</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-on" onclick="calculator.input(this,3);">÷</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-number " onclick="calculator.input(this,5);">1/x</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <button class="onclick clicknumber" value="4" onclick="calculator.input(this,-1);">4</button>
+                    </td>
+                    <td>
+                        <button class="onclick clicknumber" value="5" onclick="calculator.input(this,-1);">5</button>
+                    </td>
+                    <td>
+                        <button class="onclick clicknumber" value="6" onclick="calculator.input(this,-1);">6</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-on" onclick="calculator.input(this,2);">×</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-number" onclick="calculator.input(this,6);">%</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <button class="onclick clicknumber" value="1" onclick="calculator.input(this,-1);">1</button>
+                    </td>
+                    <td>
+                        <button class="onclick clicknumber" value="2" onclick="calculator.input(this,-1);">2</button>
+                    </td>
+                    <td>
+                        <button class="onclick clicknumber" value="3" onclick="calculator.input(this,-1);">3</button>
+                    </td>
+                    <td>
+                        <button class="onclick tip-on" onclick="calculator.input(this,1);">-</button>
+                    </td>
+                    <td rowspan="2">
+                        <button class="onclick tip-number" style="height: 86px" onclick="calculator.input(this,-2);">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="onclick clicknumber" value="0" onclick="calculator.input(this,-1);">0</button></td>
+                    <td><button class="onclick clicknumber" value="." onclick="calculator.input(this,-1);"><strong>.</strong></button></td>
+                    <td><button class="onclick tip-on" onclick="calculator.input(this,0);">+</button></td>
+
+                </tr>
+                </tbody>
+            </table>
+    </div>
+</div>
+<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>

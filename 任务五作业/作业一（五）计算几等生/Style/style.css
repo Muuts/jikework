@@ -1,0 +1,21 @@
+.wrapper{
+
+}
+
+.wrapper .Calc{
+    width: 1000px;
+    margin: 100px auto 0;
+}
+
+.wrapper p{
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    line-height: 28px;
+}

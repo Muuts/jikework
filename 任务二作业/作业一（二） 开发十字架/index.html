@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>5个100*100DIV组成的十字架</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .first {
+        background-color: #296695;
+        box-shadow: 1px 2px 9px 1px rgba(0, 0, 0, .6);
+        display: inline-block;
+        margin-left: -50px;
+        margin-top: -152px;
+    }
+    
+    .second {
+        background-color: #583076;
+        box-shadow: 2px 1px 9px 1px rgba(0, 0, 0, .6);
+        display: inline-block;
+        margin-left: -152px;
+        margin-top: -50px;
+    }
+    
+    .three {
+        background-color: #2b8f34;
+        box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, .6);
+        display: inline-block;
+        margin-left: 52px;
+        margin-top: -50px;
+    }
+    
+    .four {
+        background-color: #922628;
+        box-shadow: 1px 0px 9px 1px rgba(0, 0, 0, .6);
+        display: inline-block;
+        margin-left: -50px;
+        margin-top: 51px;
+    }
+    
+    .five {
+        background-color: #f0edf3;
+        display: inline-block;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+    
+    .img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -17px;
+        margin-top: -25px;
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    </style>
+</head>
+
+<body>
+<!-- 定义了一个box基础类，可减少重复性代码 -->
+    <!-- 蓝色小块 -->
+    <div class="first box"></div>
+    <!-- 紫色小块 -->
+    <div class="second box"></div>
+    <!-- 绿色小块 -->
+    <div class="three box"></div>
+    <!-- 红色小块 -->
+    <div class="four box"></div>
+    <!-- 中间的div小块 -->
+    <div class="five box"></div>
+    <!-- 图片小块 -->
+    <div class="img">
+        <img src="image/baby.png">
+    </div>
+    
+</body>
+
+</html>

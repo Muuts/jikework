@@ -1,0 +1,25 @@
+*{
+     margin:0;
+    padding: 0;
+}
+
+body{
+    background: #faf7ef;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 1000px;
+    margin:0 auto;
+}
+
+ol>li{
+    margin-top: 20px;
+}
+
+.footer{
+    height: 100px;
+}
