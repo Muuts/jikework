@@ -1,0 +1,14 @@
+body{
+	text-align: center;
+}
+
+table{
+
+	border-collapse:collapse;   /*表示将单元格中各小格之间的空隙进行合并*/
+	border:1px #000 solid;      /*定义边框样式*/
+	margin: auto;  /* 居中用这个 */
+}
+
+td{
+	text-align: center;
+}

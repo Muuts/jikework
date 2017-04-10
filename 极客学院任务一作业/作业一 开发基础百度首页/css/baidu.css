@@ -1,0 +1,49 @@
+body {
+    font: 12px arial;
+}
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    width: 400px;
+    float: right;
+}
+
+header nav a {
+    margin-left: 15px;
+}
+
+
+/*主体*/
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+.content input {
+    width: 450px;
+    height: 34px;
+}
+
+.content button {
+    width: 100px;
+    height: 36px;
+}
+
+
+/*底部*/
+
+footer {
+    padding-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}
