@@ -1,0 +1,13 @@
+.content_box{
+    cursor: pointer;
+}
+
+.img_box{
+    width:auto;
+}
+
+.input_con{
+    display: inline-block!important;
+    text-align: center;
+    width: 20px;
+}

@@ -1,0 +1,23 @@
+xss防御方式：
+1.使用HTTP响应头的一些XSS防护指令。
+eg：
+	header('X-XSS-Protection:1;mode=block');
+    header('X-Frame-Options:deny');
+    header('X-Content-Type-Options:nosniff');
+    header('Content-Security-Policy: default-src "self"');
+    header('Set-Cookie: key=value; HttpOnly');
+	
+2.使用：
+PHP解决方法：
+调用htmlspecialchars($str, ENT_QUOTES)
+将以下 5 种 HTML 特殊字符 < > &‘ “ 转义；
+同时使属性值被双引号包围。譬如：（直接用就行）
+	eg:<?php
+	//示例代码
+	foreach($_POST as $key => $value){
+		$_POST[$key]=addslashes(htmlspecialchars($value));
+	}
+	?>
+	
+csrf防御方式：
+1.采用随机生成token，返回到前端，记录到cookie，并下次操作时取回token进行校验。且次随机生成。

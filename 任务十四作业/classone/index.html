@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+	<title>百度新闻</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/news.css">
+</head>
+<body>
+	<div class="container cf">
+		<header class="cf">
+			<a href="#"><span class="iconfont icon-mianxingtubiaobaidu"></span></a>
+			<a href="#"><span class="iconfont icon-yonghu"></span></a>
+			<a href="#"><span class="iconfont icon-sousuo-sousuo"></span></a>
+			<a href="#"><span class="iconfont icon-add"></span></a>
+		</header>
+		<nav>
+				<ul>
+					<li><a href="#">精选</a><i></i></li>
+					<li><a href="#">百家</a><i></i></li>
+					<li><a href="#">本地</a><i></i></li>
+					<li><a href="#">图片</a><i></i></li>
+					<li><a href="#">娱乐</a><i></i></li>
+					<li><a href="#">社会</a><i></i></li>
+					<li><a href="#">军事</a><i></i></li>
+					<li><a href="#">女人</a><i></i></li>
+					<li><a href="#">搞笑</a><i></i></li>
+					<li><a href="#">互联网</a><i></i></li>
+					<li><a href="#">更多</a><i></i></li>
+				</ul>
+		</nav>
+		<article class="news-main">
+			<ul class="news-lists">
+				<!--<li class="news-list">-->
+					<!--<div class="newsimg">-->
+						<!--<img width="100%" src="https://t10.baidu.com/it/u=4275088917,3530141121&fm=170&s=F828BE5623515DC2444CA36B0300F07F&w=218&h=146&img.JPEG" alt="a">-->
+					<!--</div>-->
+					<!--<div class="newscontent">-->
+						<!--<h1>股价跌不休 Snap如何才能避免Twitter的命运？</h1>-->
+						<!--<p><span class="newstime">2016年1月10日</span><span class="newssrc">财经频道</span></p>-->
+					<!--</div>-->
+				<!--</li>-->
+			</ul>
+		</article>
+		<footer>
+			<!--点击刷新-->
+			<div class="news-click">
+				<div class="activity">
+
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="jq/jquery.min.js"></script>
+	<!--<script type="text/javascript">
+	$(document).ready(function () {
+
+		//获取当前设备的宽度，通过总体宽度来给标签设置平均宽度
+		var deviceWidth = $('body').width();
+		$('nav li').each(function (index,item) {
+			//获取a里面的文本，通过split空字符拆分，返回数组
+			if($(this).find('a').html().split('').length>2){
+				$(this).width(deviceWidth/3);
+				console.log($(this).width(deviceWidth/3));
+			}else{
+				$(this).width(deviceWidth/6);
+			}
+		})
+	})
+
+	</script>-->
+	<script type="text/javascript" src="./js/news.js"></script>
+</body>
+</html>
